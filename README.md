@@ -1,8 +1,8 @@
 # LeetCode Progress 📈
 **Username:** ranadeep_mahendra2426
 
-**Total Solved:** 68 / 3521
+**Total Solved:** 68 / 3525
 
 **Easy:** 40 / 873
-**Medium:** 27 / 1826
-**Hard:** 1 / 822
+**Medium:** 27 / 1829
+**Hard:** 1 / 823
