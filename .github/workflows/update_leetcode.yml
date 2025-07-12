@@ -1,9 +1,8 @@
 name: Update LeetCode Stats
 
 on:
-  workflow_dispatch:         # ← optional: lets you trigger it manually
   schedule:
-    - cron: '0 0 * * *'      # daily at midnight UTC
+    - cron: '0 0 * * *'
   push:
     branches:
       - main
@@ -15,6 +14,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Sync with remote main
+        run: git pull --rebase origin main
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -33,7 +35,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull --rebase origin main            # ← pull any intervening commits first
           git add README.md
           git commit -m 'Updated LeetCode stats' || echo "No changes to commit"
           git push origin main
