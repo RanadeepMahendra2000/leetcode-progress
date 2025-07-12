@@ -35,6 +35,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # stash your uncommitted README changes, rebase on main, then pop the stash
+          git pull --rebase --autostash origin main
           git add README.md
           git commit -m 'Updated LeetCode stats' || echo "No changes to commit"
           git push origin main
