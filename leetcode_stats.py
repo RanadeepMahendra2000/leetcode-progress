@@ -1,7 +1,7 @@
 import time
 import requests
 
-LEETCODE_USERNAME = 'ranadeep_mahendra2426'  # Your LeetCode username
+LEETCODE_USERNAME = 'ranadeep_mahendra2426'
 
 def fetch_leetcode_data(username):
     url = f'https://leetcode-stats-api.herokuapp.com/{username}'
@@ -10,13 +10,13 @@ def fetch_leetcode_data(username):
     return r.json()
 
 def update_readme(data):
-    ts = int(time.time())  # cache-buster timestamp
+    ts = int(time.time())  # ← generate timestamp once per run
 
     with open('README.md', 'w') as f:
         f.write("# 👋 Hi, I'm Ranadeep Mahendra!\n\n")
         f.write("## 🏆 My LeetCode Progress\n\n")
 
-        # Badges with a ?cache=<ts> suffix to force-refresh on GitHub
+        # ← Replace your old hard-coded badges with this dynamic block:
         f.write(
             f"![Solved]"
             f"(https://img.shields.io/badge/Solved-{data['totalSolved']}/{data['totalQuestions']}-blue"
