@@ -1,3 +1,4 @@
+# leetcode_stats.py
 import time
 import requests
 
@@ -16,24 +17,24 @@ def update_readme(data):
         f.write("# 👋 Hi, I'm Ranadeep Mahendra!\n\n")
         f.write("## 🏆 My LeetCode Progress\n\n")
 
-        # dynamic, cache-busted badges:
+        # Dynamic, cache-busted shields
         f.write(
-            f"![LeetCode Questions Solved]"
+            f"![Solved]"
             f"(https://img.shields.io/badge/Solved-{data['totalSolved']}/{data['totalQuestions']}-blue"
             f"?cache={ts}) "
         )
         f.write(
-            f"![LeetCode Easy]"
+            f"![Easy]"
             f"(https://img.shields.io/badge/Easy-{data['easySolved']}/{data['totalEasy']}-brightgreen"
             f"?cache={ts}) "
         )
         f.write(
-            f"![LeetCode Medium]"
+            f"![Medium]"
             f"(https://img.shields.io/badge/Medium-{data['mediumSolved']}/{data['totalMedium']}-orange"
             f"?cache={ts}) "
         )
         f.write(
-            f"![LeetCode Hard]"
+            f"![Hard]"
             f"(https://img.shields.io/badge/Hard-{data['hardSolved']}/{data['totalHard']}-red"
             f"?cache={ts})\n\n"
         )
