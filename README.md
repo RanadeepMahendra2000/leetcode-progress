@@ -2,8 +2,8 @@
 
 ## 🏆 My LeetCode Progress
 
-![Solved](https://img.shields.io/badge/Solved-73/3893-blue?cache=1775791759) ![Easy](https://img.shields.io/badge/Easy-41/935-brightgreen?cache=1775791759) ![Medium](https://img.shields.io/badge/Medium-31/2037-orange?cache=1775791759) ![Hard](https://img.shields.io/badge/Hard-1/921-red?cache=1775791759)
+![Solved](https://img.shields.io/badge/Solved-73/3893-blue?cache=1775875980) ![Easy](https://img.shields.io/badge/Easy-41/935-brightgreen?cache=1775875980) ![Medium](https://img.shields.io/badge/Medium-31/2037-orange?cache=1775875980) ![Hard](https://img.shields.io/badge/Hard-1/921-red?cache=1775875980)
 
 ### 📊 LeetCode Activity Graph
 
-![LeetCode Activity Graph](https://leetcard.jacoblin.cool/ranadeep_mahendra2426?theme=dark&font=Karma&ext=heatmap&cache=1775791759)
+![LeetCode Activity Graph](https://leetcard.jacoblin.cool/ranadeep_mahendra2426?theme=dark&font=Karma&ext=heatmap&cache=1775875980)
